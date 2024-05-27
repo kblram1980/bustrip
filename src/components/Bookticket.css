@@ -1,0 +1,77 @@
+.ticketContainer{
+    background-color: #fff;
+    height:200px;
+    position: relative;
+    top:50%;
+    margin-left:5%;
+    margin-right:5%;
+    transform: translateY(-50%); 
+    border-radius: 6px ;
+    border: 1px solid #4f0c8e;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px; 
+    margin: 20px 0px;
+    border-bottom: 1px solid #dad5d5;
+    padding-bottom: 12px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.radio-label input {
+    margin-right: 5px; /* Adjust space between radio button and label text */
+}
+
+
+
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 10px; /* Adjust gap as needed */
+    margin: 0px 6px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(25% - 16px); /* Adjust the percentage and gap for 4 columns */
+    box-sizing: border-box;
+  }
+  
+  .form-row label {
+    margin-bottom: 8px; /* Adjust margin as needed */
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 8px;
+  }
+  
+  .form-row input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+  }
+  
+  /* Ensure responsiveness */
+  @media (max-width: 1024px) {
+    .form-row {
+      flex: 1 1 calc(50% - 16px); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .form-row {
+      flex: 1 1 100%; /* 1 column for small screens */
+    }
+  }
+  

@@ -1,0 +1,14 @@
+.radio-group {
+    display: flex;
+    gap: 10px; /* Adjust spacing between radio buttons */
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-label input {
+    margin-right: 5px; /* Adjust space between radio button and label text */
+}

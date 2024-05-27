@@ -1,0 +1,147 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 150px; /* Adjust as needed */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    color: #121212;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #3938;
+    margin: 4px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+        position: absolute;
+        top: 38px;
+        width: 218px;
+        right: 45px;
+    }
+
+    .menu li {
+        margin: 0px;
+        text-align: left;
+        background: #ddd;
+        padding: 10px;
+        border-bottom: 1px solid #000;
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.menu a.active {
+    color:#0e33cb;
+}
+
+
+
+.banner {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 70vh;
+    background-image: url('../Images/Home_Banner.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    width:98%;
+    margin: auto;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  
+  .banner-content {
+    text-align: left;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay for better text readability */
+    padding-left: 55px;
+    padding-top:40px;
+    padding-right:40px;
+    border-radius: 10px;
+    width:350px;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .banner p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+    .banner{
+        height:55vh;
+    }
+  
+    .banner p {
+        font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner{
+        height:45vh;
+    }
+    .banner-content {
+        padding-left:20px;
+    }
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+  
+    .banner p {
+        font-size: 0.875rem;
+    }
+  }
+  
